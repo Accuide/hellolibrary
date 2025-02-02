@@ -18,7 +18,7 @@
                 overlays = [self.overlays.default];
             };
         in {
-            packages.aarch64-darwin.default = pkgs.hello_executable;
+            packages.aarch64-darwin.default = pkgs.hello_lib;
             overlays.default = nixpkgs.lib.composeManyExtensions overlays_to_install;
         };
 
